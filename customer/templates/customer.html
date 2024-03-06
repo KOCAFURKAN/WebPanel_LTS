@@ -1,0 +1,43 @@
+{%  extends "head.html" %}
+
+{% block content %}
+    <div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="customerSelect">Müşteri Seç:</label>
+        <select class="form-control" id="customerSelect">
+          <option value="">Müşteri 1</option>
+          <option value="">Müşteri 2</option>
+          <option value="">Müşteri 3</option>
+          <!-- Diğer müşteriler buraya eklenebilir -->
+        </select>
+      </div>
+      
+    </div>
+    <div class="col-md-6">
+      <form id="borcForm" class="form-group">
+        <!-- Borç düzenleme formu içeriği -->
+        <h2>Borç Düzenleme Formu</h2>
+        <div class="form-group">
+          <label for="borcAmount">Borç Miktarı:</label>
+          <input type="text" class="form-control" id="borcAmount">
+        </div>
+        <!-- Diğer borç bilgileri inputları buraya eklenebilir -->
+        <button type="submit" class="btn btn-primary">Borç Kaydet</button>
+      </form>
+      <form id="odemeForm" class="form-group">
+        <!-- Ödeme düzenleme formu içeriği -->
+        <h2>Ödeme Düzenleme Formu</h2>
+        <div class="form-group">
+          <label for="odemeAmount">Ödeme Miktarı:</label>
+          <input type="text" class="form-control" id="odemeAmount">
+        </div>
+        <!-- Diğer ödeme bilgileri inputları buraya eklenebilir -->
+        <button type="submit" class="btn btn-primary">Ödeme Kaydet</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
